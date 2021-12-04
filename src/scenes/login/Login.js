@@ -55,7 +55,7 @@ export default function Login({navigation}) {
           source={require('../../../assets/icon.png')}
         />
         <TextInput
-          style={scheme === 'dark' ? styles.darkinput : styles.input}
+          style={styles.darkinput}
           placeholder='E-mail'
           placeholderTextColor="#aaaaaa"
           onChangeText={(text) => setEmail(text)}
@@ -65,7 +65,7 @@ export default function Login({navigation}) {
           keyboardType={'email-address'}
         />
         <TextInput
-          style={scheme === 'dark' ? styles.darkinput : styles.input}
+          style={styles.darkinput}
           placeholderTextColor="#aaaaaa"
           secureTextEntry
           placeholder='Senha'
@@ -80,7 +80,7 @@ export default function Login({navigation}) {
           <Text style={styles.buttonTitle}>Entrar</Text>
         </TouchableOpacity>
         <View style={styles.footerView}>
-          <Text style={scheme === 'dark' ? styles.darkfooterText : styles.footerText}>Não tem uma conta? <Text onPress={onFooterLinkPress} style={styles.footerLink}>Registre-se</Text></Text>
+          <Text style={styles.darkfooterText}>Não tem uma conta? <Text onPress={onFooterLinkPress} style={styles.footerLink}>Registre-se</Text></Text>
         </View>
       </KeyboardAwareScrollView>
       <Spinner

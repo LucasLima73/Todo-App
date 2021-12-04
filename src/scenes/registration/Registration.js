@@ -74,7 +74,7 @@ export default function Registration({ navigation }) {
           source={require('../../../assets/icon.png')}
         />
         <TextInput
-          style={scheme === 'dark' ? styles.darkinput : styles.input}
+          style={styles.darkinput}
           placeholder="Seu nome"
           placeholderTextColor="#aaaaaa"
           onChangeText={(text) => setFullName(text)}
@@ -83,7 +83,7 @@ export default function Registration({ navigation }) {
           autoCapitalize="none"
         />
         <TextInput
-          style={scheme === 'dark' ? styles.darkinput : styles.input}
+          style={styles.darkinput}
           placeholder="E-mail"
           placeholderTextColor="#aaaaaa"
           onChangeText={(text) => setEmail(text)}
@@ -93,7 +93,7 @@ export default function Registration({ navigation }) {
           keyboardType={'email-address'}
         />
         <TextInput
-          style={scheme === 'dark' ? styles.darkinput : styles.input}
+          style={styles.darkinput}
           placeholderTextColor="#aaaaaa"
           secureTextEntry
           placeholder="Senha"
@@ -103,7 +103,7 @@ export default function Registration({ navigation }) {
           autoCapitalize="none"
         />
         <TextInput
-          style={scheme === 'dark' ? styles.darkinput : styles.input}
+          style={styles.darkinput}
           placeholderTextColor="#aaaaaa"
           secureTextEntry
           placeholder="Confirmar senha"
@@ -121,7 +121,7 @@ export default function Registration({ navigation }) {
         <View style={styles.footerView}>
           <Text
             style={
-              scheme === 'dark' ? styles.darkfooterText : styles.footerText
+              styles.darkfooterText
             }
           >
             Já possui uma conta?{' '}
